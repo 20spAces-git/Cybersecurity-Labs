@@ -1,0 +1,94 @@
+# Lab 04 - Traceroute Analysis
+
+## Objective
+
+Use the tracert command to identify the path network traffic takes from a local system to a remote host and analyze the route.
+
+## Command Used
+
+```bash
+tracert google.com
+```
+
+## Results
+
+### Destination Host
+
+google.com
+
+### Destination IP Address
+
+142.250.26.139
+
+### First Hop
+
+10.101.128.2
+
+### Last Hop
+
+142.250.26.139
+
+### Number of Hops
+
+20
+
+## Analysis
+
+The traceroute command displayed the path that network traffic traveled from my system to Google's servers.
+
+The first hop was 10.101.128.2, which appears to be an internal network device responsible for forwarding traffic from the local network.
+
+The route then traversed multiple intermediate routers and service provider networks before reaching Google's infrastructure.
+
+Several hops displayed "Request timed out." This does not necessarily indicate a network problem. Many routers are configured to ignore traceroute requests for security or performance reasons while still forwarding traffic normally.
+
+The traceroute successfully completed and reached the destination host, confirming that connectivity to Google's network was maintained.
+
+The path included infrastructure associated with Kansas City and Dallas before entering Google's network.
+
+## Questions
+
+### What does tracert do?
+
+Answer:
+
+Tracert identifies the path that network traffic takes to reach a destination.
+
+### What is a hop?
+
+Answer:
+
+A hop is a router or network device that forwards traffic toward its destination.
+
+### Why is tracert useful?
+
+Answer:
+
+Traceroute helps troubleshoot connectivity issues and identify where delays or failures occur along a network path.
+
+### Why do some hops show "Request timed out"?
+
+Answer:
+
+Some routers are configured not to respond to traceroute requests even though they continue forwarding traffic normally.
+
+## What I Learned
+
+* Traceroute shows the route traffic takes across networks.
+* Network traffic often travels through multiple routers before reaching its destination.
+* Each hop represents an intermediary network device.
+* Some routers intentionally do not respond to traceroute requests.
+* Successful completion of traceroute confirms connectivity to the destination.
+
+## Cybersecurity Connection
+
+Security analysts and network administrators use traceroute to troubleshoot network issues, investigate connectivity problems, and understand how traffic moves across networks.
+
+Traceroute can help identify routing issues, latency problems, and potential points of failure during incident investigations.
+
+## Safety Considerations
+
+* Only perform traceroute commands on systems and networks you own or are authorized to analyze.
+* Review command output before publishing results to remove sensitive information.
+* Follow organizational policies and ethical guidelines when performing network diagnostics.
+* Avoid disclosing internal network information that could expose organizational infrastructure.
