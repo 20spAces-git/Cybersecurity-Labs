@@ -1,0 +1,121 @@
+# Lab 06 - Netstat Analysis
+
+## Objective
+
+Use the netstat command to identify active network connections, listening ports, and communication occurring on a Windows system.
+
+## Command Used
+
+```bash
+netstat -an
+```
+
+## Results
+
+Listening Connections:
+
+25
+
+Established Connections:
+
+47
+
+Protocols Observed:
+
+* TCP
+* UDP
+
+## Analysis
+
+The netstat command displayed active network connections and listening ports on the system.
+
+A total of 25 listening connections were identified. Listening connections represent services and applications waiting for incoming network traffic.
+
+A total of 47 established connections were identified. Established connections represent active communication between the local system and remote systems.
+
+Both TCP and UDP protocols were observed during the analysis.
+
+TCP connections were observed in LISTENING and ESTABLISHED states, indicating active network communication and services waiting for incoming connections.
+
+UDP connections were also present and are commonly used by background services, DNS requests, streaming applications, and other network services that prioritize speed over guaranteed delivery.
+
+The number of active connections observed is normal for a Windows system connected to an enterprise network.
+
+## Questions
+
+### What does netstat do?
+
+Answer:
+
+Netstat displays active network connections, listening ports, and network statistics.
+
+### What does LISTENING mean?
+
+Answer:
+
+LISTENING indicates that a service is waiting for incoming network connections.
+
+### What does ESTABLISHED mean?
+
+Answer:
+
+ESTABLISHED indicates an active connection between two devices.
+
+### What protocols were observed during this lab?
+
+Answer:
+
+TCP and UDP.
+
+### Why is netstat useful?
+
+Answer:
+
+Netstat helps identify active connections, open ports, and network activity.
+
+## Additional Observations
+
+The netstat output contained both TCP and UDP entries.
+
+TCP connections appeared in LISTENING and ESTABLISHED states.
+
+LISTENING entries represented services waiting for incoming connections.
+
+ESTABLISHED entries represented active communication between the local system and remote systems.
+
+UDP entries were also present and were primarily associated with background services and network communication that prioritized speed over guaranteed delivery.
+
+This observation reinforced the differences between TCP and UDP studied in the Networking Fundamentals repository.
+
+## What I Learned
+
+* Netstat displays active network connections.
+* Listening ports wait for incoming traffic.
+* Established connections represent active communication.
+* Modern systems maintain many simultaneous network connections.
+* Both TCP and UDP are commonly used by Windows systems.
+* Netstat can be used to investigate network activity and troubleshoot connectivity issues.
+
+## Cybersecurity Connection
+
+Security analysts frequently use netstat during investigations to identify active network connections, detect suspicious communication, and verify which services are running on a system.
+
+Netstat is often one of the first tools used when investigating potentially compromised systems or unusual network activity.
+
+Understanding active connections helps analysts identify unauthorized communications and investigate security incidents.
+
+## Safety Considerations
+
+* Only analyze systems and networks you own or are authorized to access.
+* Review command output before publishing results to GitHub.
+* Avoid disclosing sensitive network information publicly.
+* Follow organizational policies and ethical guidelines when performing network analysis.
+* Remove or redact IP addresses and network details when necessary.
+
+## Conclusion
+
+The netstat command successfully identified active network connections and listening ports on the system.
+
+The analysis revealed both TCP and UDP traffic, along with 25 listening connections and 47 established connections.
+
+This lab demonstrated how network analysts and cybersecurity professionals use netstat to investigate system communications and understand network activity.
