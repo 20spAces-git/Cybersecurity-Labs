@@ -1,0 +1,89 @@
+# Lab 05 - DNS Analysis
+
+## Objective
+
+Use the nslookup command to investigate DNS resolution and identify the IP address associated with a domain name.
+
+## Command Used
+
+nslookup google.com
+
+## Results
+
+DNS Server:
+
+Unknown
+
+DNS Server IP:
+
+10.198.0.70
+
+Domain Name:
+
+google.com
+
+Returned IP Address:
+
+2607:f8b0:4023:1002::66
+
+Address Type:
+
+IPv6
+
+## Analysis
+
+The DNS lookup successfully resolved the domain name google.com.
+
+The DNS server used for the query was 10.198.0.70.
+
+The lookup returned an IPv6 address, indicating that Google's services support IPv6 connectivity.
+
+Although the DNS server hostname was listed as "Unknown," the query completed successfully and returned a valid result.
+
+DNS allows users to access websites using human-readable names instead of numerical IP addresses.
+
+## Questions
+
+### What does DNS stand for?
+
+Answer:
+
+Domain Name System
+
+### What is the purpose of DNS?
+
+Answer:
+
+DNS translates domain names into IP addresses.
+
+### Why is DNS important?
+
+Answer:
+
+DNS allows users to access websites using names instead of memorizing IP addresses.
+
+### What is the difference between IPv4 and IPv6?
+
+Answer:
+
+IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses and supports a significantly larger address space.
+
+## What I Learned
+
+* DNS translates domain names into IP addresses.
+* The nslookup command can be used to perform DNS queries.
+* DNS responses may return IPv4 or IPv6 addresses.
+* Enterprise networks often use internal DNS servers.
+
+## Cybersecurity Connection
+
+Security analysts use DNS investigations during threat hunting, malware analysis, phishing investigations, and incident response activities.
+
+DNS logs are often used to identify suspicious domains and malicious network activity.
+
+## Safety Considerations
+
+* Only perform DNS lookups on systems and networks you are authorized to use.
+* Review command output before publishing results to GitHub.
+* Avoid disclosing sensitive internal DNS infrastructure information.
+* Follow organizational policies when performing network analysis.
