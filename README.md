@@ -7,7 +7,9 @@ Lab 03 - Ping Analysis
 Lab 04 - Tracert Analysis
 Lab 05 - DNS Lookup Analysis
 
-##
 ✅ Lab 01 - Network Diagnostics
 ✅ Lab 02 - ARP Analysis
 ✅ Lab 03 - Ping Analysis
+✅ Lab 04 - Traceroute Analysis
+✅ Lab 05 - DNS Analysis
+✅ Lab 06 - Netstat Analysis
